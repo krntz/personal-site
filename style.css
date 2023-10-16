@@ -4,8 +4,10 @@ body{
 }
 
 .message{
-    padding:20px 40px;
+    width: 750px;
+    padding:20px 60px;
     background-color:#3c3836;
+    border-radius: 10px;
     border:1px solid #fff;
     margin: 0;
     position: absolute;
@@ -14,31 +16,70 @@ body{
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     display: grid;
-    gap: 50px 25px;
+    gap: 25px 50px;
+    justify-items: center;
+    align-items: center;
 }
 
-.messageContent{
-    color: #ebdbb2;
-    grid-column-start: 2;
-    grid-column-end: 2;
+
+heading {
+    font-family: Oswald, sans-serif;
+    font-size: 46px;
+    font-weight: lighter;
 }
 
-h1{
-    font-size: 18px;
-    line-height: 26px;
+subheading {
+    font-family: Oswald, sans-serif;
+    font-size: 16px;
+    font-style: italic;
 }
 
 p{
-    font-size: 12px;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: white;
 }
 
 .avatar {
     vertical-align: middle;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.messageContent {
+    color: #ebdbb2;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.socialLinks {
+    grid-row-start: 2;
     grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+ /* Style all font awesome icons */
+.fa {
+  padding: 15px;
+  margin: 5px;
+  text-align: center;
+  text-decoration: none;
+  background: white;
+  color: black;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
 }
