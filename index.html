@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Peeking behind the curtain, eh? -->
         <title>Amandus Krantz</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,7 +20,18 @@
             <div class="socialLinks">
                 <a href="https://www.github.com/krntz" title="Github" class="fa fa-brands fa-github fa-lg"></a>
                 <a href="https://www.linkedin.com/in/amanduskrantz" title="LinkedIn" class="fa fa-brands fa-linkedin fa-lg"></a>
-                <a href="https://scholar.google.com/citations?user=0X5SrCMAAAAJ" title="Google Scholar" class="fa fa-brands fa-google fa-lg"></a>
+                <a href="https://scholar.google.com/citations?user=0X5SrCMAAAAJ" title="Google Scholar" class="fa fa-solid fa-graduation-cap fa-lg"></a>
+                <a id="mlink" href="#" title="Email" class="fa fa-solid fa-envelope fa-lg"></a>
+
+                <!-- Obfuscation to prevent scrapers from scraping my email -->
+                <script>
+                    var me = "krantz.amandus";
+                    var place = "protomail.com";
+                    
+                    var elink = document.getElementById("mlink");
+                    
+                    elink.href = `mailto:${me}@${place}`;
+                </script>
             </div>
         </div>
         <div class="footer">
