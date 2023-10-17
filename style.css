@@ -3,22 +3,6 @@ body{
     font-family: Helvetica, Arial, sans-serif;
 }
 
-.topnav {
-    font-family: "Noto Sans", sans-serif;
-    background-color:#3c3836;
-    overflow: hidden;
-    float: right;
-}
-
-.topnav a {
-    float: right;
-    color: #ebdbb2;
-    text-align: center;
-    padding: 10px 12px;
-    text-decoration: none;
-    font-size: 14px;
-}
-
 .message{
     width: 75%;
     max-width: 750px;
