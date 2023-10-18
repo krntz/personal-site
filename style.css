@@ -17,7 +17,6 @@ body{
     transform: translate(-50%, -50%);
     display: grid;
     gap: 25px 50px;
-    justify-items: center;
     align-items: center;
 }
 
@@ -57,14 +56,15 @@ a {
 }
 
 .avatar {
-    vertical-align: middle;
     width: 250px;
     height: 250px;
-    border-radius: 50%;
+    border-radius: 2.5%;
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
     grid-row-end: 3;
+    align-self: center;
+    justify-self: center;
 }
 
 .messageHeading {
@@ -84,6 +84,7 @@ a {
 }
 
 .socialLinks {
+    justify-self: center;
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 3;
@@ -120,7 +121,7 @@ a {
   opacity: 0.7;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:950px) {
     body {
         background-color: #3c3836;
     }
@@ -128,6 +129,7 @@ a {
     .message{
         border: 0px;
         padding: 0px 0px;
+        justify-items: center;
     }
 
     .avatar {
@@ -138,6 +140,7 @@ a {
     }
 
     .messageHeading {
+        justify-self: center;
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 1;
@@ -160,7 +163,7 @@ a {
 }
 
 /* adapt to small screens */
-@media screen and (max-width:700px) {
+@media screen and (max-width:740px) {
     body{
         background-color: #3c3836;
     }
@@ -168,6 +171,7 @@ a {
     .message{
         border: 0px;
         padding: 0px 0px;
+        justify-items: center;
     }
 
     .avatar {
@@ -186,6 +190,7 @@ a {
     }
 
     .messageContent {
+        justify-self: center;
         grid-column-start: 1;
         grid-column-end: 1;
         grid-row-start: 3;
